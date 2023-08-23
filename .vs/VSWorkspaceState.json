@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\pages",
+    "\\static",
+    "\\static\\stylesheets"
   ],
-  "SelectedNode": "\\C:\\Users\\Maria\\Source\\Repos\\Dracey.github.io",
+  "SelectedNode": "\\static\\stylesheets\\StyleSheet1.css",
   "PreviewInSolutionExplorer": false
 }
