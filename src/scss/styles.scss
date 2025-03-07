@@ -1,0 +1,108 @@
+body {
+    font-family: UberMoveBold, sans-serif;
+    background-color: #F9F1E4;
+    color: #3a4051;
+}
+
+
+@font-face {
+    font-family: UberMoveBold;
+    src: url('../assets/fonts/UberMoveBold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Afterhours;
+    src: url('../assets/fonts/Afterhours.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: Afterhours, sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3a4051;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.header {
+    background-image: url('../assets/images/Header-image-photo3.jpg');
+    background-size: cover;
+    padding: 20px 0;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #F9F1E4;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+}
+
+.line-around-nav {
+    border-bottom: 3px solid #3a4051;
+    width: 70%;
+}
+
+.first-row-of-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+    max-height: 600px;
+}
+
+.photo-holder {
+    order: 1;
+    background-image: url('../assets/images/Knipsel.jpg');
+    background-size: cover;
+    min-width: 350px;
+    height: 400px;
+}
+
+.introduction-alinea {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    order: 2;
+    text-align: left;
+}
+
+.introduction-alinea-titel {
+    min-width: 350px;
+}
+
+.introduction-alinea-titel span {
+}
+
+
+
+
