@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: UberMoveBold, sans-serif;
     background-color: #F9F1E4;
@@ -46,9 +50,9 @@ a {
 
 .header {
     background-image: url('../assets/images/Header-image-photo3.jpg');
-    background-size: 100% 100%;
+    background-size: 120% 120%;
     background-position: center;
-    aspect-ratio: 17/8;
+    aspect-ratio: 18/8;
     padding: 20px 0;
     text-align: center;
     width: 100%;
@@ -58,7 +62,7 @@ a {
 
 .skills-header {
     background-image: url('../assets/images/Skills-image2.jpg');
-    background-size: 120% 120%;
+    background-size: 140% 140%;
     background-position: center;
     aspect-ratio: 17/8;
     width: 100%;
@@ -104,17 +108,12 @@ nav ul {
 }
 
 .introduction-alinea {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     order: 2;
     text-align: left;
-
 }
-
-.introduction-alinea-titel {
-    min-width: 350px;
-}
-
 
 .introduction-alinea-links {
     max-width: 600px;
