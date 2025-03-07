@@ -25,6 +25,12 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-family: Afterhours, sans-serif;
+    font-size: 2em;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: #3a4051;
@@ -42,11 +48,13 @@ a {
 
 .header {
     background-image: url('../assets/images/Header-image-photo3.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: center;
+    aspect-ratio: 17/8;
     padding: 20px 0;
     text-align: center;
-    height: 500px;
     width: 100%;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -75,23 +83,22 @@ nav ul {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 20px;
+    margin: 60px 0 60px 0;
     height: auto;
     max-height: 600px;
 }
 
 .photo-holder {
     order: 1;
-    background-image: url('../assets/images/Knipsel.jpg');
+    background-image: url('../assets/images/picture-of-me2.png');
     background-size: cover;
-    min-width: 350px;
-    height: 400px;
+    min-width: 375px;
+    min-height: 288px;
 }
 
 .introduction-alinea {
     display: flex;
     flex-direction: column;
-    padding: 20px;
     order: 2;
     text-align: left;
 }
@@ -100,9 +107,27 @@ nav ul {
     min-width: 350px;
 }
 
-.introduction-alinea-titel span {
+
+.introduction-alinea-links {
+    max-width: 500px;
 }
 
+.short-summary-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 700px;
+    margin: 30px 0 30px 0;
+}
+
+.summary-h2 {
+    text-align: left;
+}
+
+.short-summary-list ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 
 
