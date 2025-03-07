@@ -139,12 +139,15 @@ nav ul {
 }
 
 .second-row-of-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 800px;
     margin: 30px 0 30px 0;
 }
 
 .second-row-h2 {
-    text-align: right;
+    text-align: center;
 }
 
 
