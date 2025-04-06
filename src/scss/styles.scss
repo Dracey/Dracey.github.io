@@ -100,6 +100,20 @@ nav ul {
     margin-top: 20px;
 }
 
+.projects-header, .contact-header {
+    background-image: url('../assets/images/project-image.jpg');
+    background-size: 130% 130%;
+    background-position: center;
+    aspect-ratio: 17/8;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.contact-header {
+    background-image: url('../assets/images/contact-image.jpg');
+}
+
 
 .line-around-nav {
     border-bottom: 3px solid #3a4051;
@@ -117,12 +131,43 @@ nav ul {
     max-height: 600px;
 }
 
+.second-row-of-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 60px 0 60px 0;
+    height: auto;
+}
+
+.third-row-of-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 60px 0 60px 0;
+    height: auto;
+}
+
+.fourth-row-of-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 60px 0 60px 0;
+    height: auto;
+}
+
 .photo-holder {
     order: 1;
-    background-image: url('../assets/images/picture-of-me2.PNG');
+    background-image: url('../assets/images/image-of-me.JPG');
     background-size: cover;
-    min-width: 375px;
-    min-height: 288px;
+    min-width: 350px;
+    min-height: 400px;
 }
 
 .introduction-alinea {
@@ -156,29 +201,6 @@ nav ul {
     font-size: 1.1em;
 }
 
-.second-row-of-items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: 60px 0 60px 0;
-    height: auto;
-}
-
-.third-row-of-items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: 60px 0 60px 0;
-    height: auto;
-}
-
-.second-row-h2 {
-    text-align: center;
-}
 
 .timeline {
     display: flex;
@@ -259,26 +281,6 @@ nav ul {
     color: #555;
 }
 
-@media (max-width: 768px) {
-    .timeline::before {
-        left: 10px; 
-    }
-
-    .timeline-item {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .timeline-item::before {
-        left: -22px; 
-    }
-
-    .timeline-date {
-        text-align: left;
-        padding-left: 30px; 
-    }
-}
-
 .skills {
     text-align: center;
     padding: 50px 20px;
@@ -320,8 +322,89 @@ nav ul {
 }
 
 
+.project-text {
+    text-align: center;
+    width: 500px;
+    margin: 30px 0 30px 0;
+}
+
+.project-holder {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    transition: background 0.3s ease;
+}
+
+.project-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px #3a4051;
+}
+
+.project-card:hover .overlay {
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+
+
 
 @media (max-width: 768px) {
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .timeline-item::before {
+        left: -22px;
+    }
+
+    .timeline-date {
+        text-align: left;
+        padding-left: 30px;
+    }
+
     .skills-list {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -334,8 +417,8 @@ nav ul {
         color: #FF8D71;
         font-size: 1.2rem;
     }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
 }
-
-
-
-
