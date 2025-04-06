@@ -102,9 +102,8 @@ nav ul {
 
 .projects-header, .contact-header {
     background-image: url('../assets/images/project-image.jpg');
-    background-size: 120% 120%;
+    background-size: 120% ;
     background-position: center;
-    aspect-ratio: 17/8;
     width: 100%;
     height: 200px;
     margin-top: 20px;
@@ -424,5 +423,11 @@ nav ul {
 
     .project-text {
         width: 100%;
+    }
+
+
+    .projects-header, .contact-header {
+        background-size: 180% ;
+        height: 150px;
     }
 }
