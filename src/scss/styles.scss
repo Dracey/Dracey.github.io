@@ -430,4 +430,17 @@ nav ul {
         background-size: 180% ;
         height: 150px;
     }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        align-content: center;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
