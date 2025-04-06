@@ -102,7 +102,7 @@ nav ul {
 
 .projects-header, .contact-header {
     background-image: url('../assets/images/project-image.jpg');
-    background-size: 130% 130%;
+    background-size: 120% 120%;
     background-position: center;
     aspect-ratio: 17/8;
     width: 100%;
@@ -128,7 +128,7 @@ nav ul {
     width: 100%;
     margin: 60px 0 60px 0;
     height: auto;
-    max-height: 600px;
+    max-height: 700px;
 }
 
 .second-row-of-items {
@@ -324,7 +324,7 @@ nav ul {
 
 .project-text {
     text-align: center;
-    width: 500px;
+    width: 600px;
     margin: 30px 0 30px 0;
 }
 
@@ -420,5 +420,9 @@ nav ul {
 
     .projects-container {
         grid-template-columns: 1fr;
+    }
+
+    .project-text {
+        width: 100%;
     }
 }
