@@ -382,6 +382,26 @@ nav ul {
     background: rgba(0, 0, 0, 0.3); 
 }
 
+.contact-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    margin: 60px 0 60px 0;
+    height: auto;
+}
+
+.icon-size {
+    font-size: 10rem;
+}
+
+.contact-items a, p{
+    text-align: center;
+}
+
+
 
 
 
